@@ -1,0 +1,63 @@
+This kata is a harder version of http://www.codewars.com/kata/sudoku-solver/python made by @pineappleclock
+
+Write a function that will solve a 9x9 Sudoku puzzle. The function will take one argument consisting of
+the 2D puzzle array, with the value 0 representing an unknown square.
+
+The Sudokus tested against your function will be "insane" and can have multiple solutions. The solution only need
+to give one valid solution in the case of the multiple solution sodoku.
+
+It might require some sort of brute force.
+
+Consider applying algorithm with
+
+    Backtracking https://www.wikiwand.com/en/Sudoku_solving_algorithms#Backtracking
+    Brute Force
+
+For Sudoku rules, see the Wikipedia : http://www.wikiwand.com/en/Sudoku
+
+Used puzzle from : http://www.extremesudoku.info/sudoku.html
+
+puzzle = [[5,3,0,0,7,0,0,0,0],
+          [6,0,0,1,9,5,0,0,0],
+          [0,9,8,0,0,0,0,6,0],
+          [8,0,0,0,6,0,0,0,3],
+          [4,0,0,8,0,3,0,0,1],
+          [7,0,0,0,2,0,0,0,6],
+          [0,6,0,0,0,0,2,8,0],
+          [0,0,0,4,1,9,0,0,5],
+          [0,0,0,0,8,0,0,7,9]]
+
+solve(puzzle)
+
+------------------------------------------------------------------------------------------------------------------------
+
+Это ката является более сложной версией http://www.codewars.com/kata/sudoku-solver/python сделано @pineappleclock
+
+Напишите функцию, которая будет решать головоломку судоку 9х9. Функция примет один аргумент, состоящий
+из массива 2D-головоломок, со значением 0, представляющим неизвестный квадрат.
+
+Судоку, протестированный против вашей функции, будет "безумным" и может иметь несколько решений. Решение
+должно давать только одно допустимое решение в случае множественного решения sodoku.
+
+Это может потребовать какой-то грубой силы.
+
+Рассмотрите возможность применения алгоритма с
+
+Отступление https://www.wikiwand.com/en/Sudoku_solving_algorithms#Backtracking
+Грубая сила
+
+Правила судоку см. в Википедии: http://www.wikiwand.com/en/Sudoku
+
+Использованный пазл из: http://www.extremesudoku.info/sudoku.html
+
+головоломка = [[5,3,0,0,7,0,0,0,0],
+[6,0,0,1,9,5,0,0,0],
+[0,9,8,0,0,0,0,6,0],
+[8,0,0,0,6,0,0,0,3],
+[4,0,0,8,0,3,0,0,1],
+[7,0,0,0,2,0,0,0,6],
+[0,6,0,0,0,0,2,8,0],
+[0,0,0,4,1,9,0,0,5],
+[0,0,0,0,8,0,0,7,9]]
+
+решить (головоломку)
