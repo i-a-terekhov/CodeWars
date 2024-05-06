@@ -1,4 +1,4 @@
-from hard_sudoku_solver import solve
+from my_code import solve
 from old_version import solve as old_version
 from code_from_codewars import solve as cw_solve
 
