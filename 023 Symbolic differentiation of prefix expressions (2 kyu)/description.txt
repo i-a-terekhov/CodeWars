@@ -1,0 +1,104 @@
+In this kata your task is to differentiate a mathematical expression given as a string in prefix notation.
+The result should be the derivative of the expression returned in prefix notation.
+
+To simplify things we will use a simple list format made up of parentesis and spaces.
+
+    The expression format is (func arg1) or (op arg1 arg2) where op means operator,
+    func means function and arg1, arg2 are aguments to the operator or function. For example (+ x 1) or (cos x)
+
+    The expressions will always have balanced parentesis and with spaces between list items.
+
+    Expression operators, functions and arguments will all be lowercase.
+
+    Expressions are single variable expressions using x as the variable.
+
+    Expressions can have nested arguments at any depth for example (+ (* 1 x) (* 2 (+ x 1)))
+
+Examples of prefix notation in this format:
+(+ x 2)        // prefix notation version of x+2
+(* (+ x 3) 5)  // same as 5 * (x + 3)
+(cos (+ x 1))  // same as cos(x+1)
+(^ x 2)        // same as x^2 meaning x raised to power of 2
+
+The operators and functions you are required to implement are + - * / ^ cos sin tan exp ln where ^ means
+raised to power of. exp is the exponential function (same as e^x) and ln is the natural logarithm (base e).
+
+Example of input values and their derivatives:
+(* 1 x) => 1
+(^ x 3) => (* 3 (^ x 2))
+(cos x) => (* -1 (sin x))
+
+In addition to returning the derivative your solution must also do some simplifications of the result but only what
+is specified below.
+
+    The returned expression should not have unecessary 0 or 1 factors. For example it should not return
+    (* 1 (+ x 1)) but simply the term (+ x 1) similarly it should not return (* 0 (+ x 1))
+    instead it should return just 0
+
+    Results with two constant values such as for example (+ 2 2) should be evaluated and returned as a single value 4
+
+    Any argument raised to the zero power should return 1 and if raised to 1 should return the same value or variable.
+    For example (^ x 0) should return 1 and (^ x 1) should return x
+
+    No simplifications are expected for functions like cos, sin, exp, ln...
+    (but their arguments might require a simplification).
+
+Think recursively and build your answer according to the rules of derivation and sample test cases.
+
+If you need to diff any test expressions you can use Wolfram Alpha however remember we use prefix format in this kata.
+
+Best of luck !
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+"В этом ката ваша задача состоит в том, чтобы дифференцировать математическое выражение, заданное в виде
+строки в префиксной записи. Результатом должна быть производная от выражения, возвращаемого в префиксной записи.
+Чтобы упростить ситуацию, мы будем использовать простой формат списка, состоящий из круглых скобок и пробелов.
+
+    Формат выражения - (func arg1) или (op arg1 arg2), где op означает оператор,
+    func означает функцию, а arg1, arg2 являются ссылками на оператор или функцию. Например (+ x 1) или (cos x)
+
+    Выражения всегда будут иметь сбалансированные круглые скобки и пробелы между элементами списка.
+
+    Операторы выражений, функции и аргументы будут написаны в нижнем регистре.
+
+    Выражения - это выражения с одной переменной, использующие x в качестве переменной.
+
+    Выражения могут иметь вложенные аргументы на любой глубине, например (+ (* 1 x) (* 2 (+ x 1)))
+
+Примеры префиксной нотации в этом формате:
+(+ x 2) // версия префиксной записи x+2
+(* (+ x 3) 5) // то же, что 5 * (x + 3)
+(cos (+ x 1)) // то же, что cos(x+1)
+(^ x 2) // то же, что и x ^ 2, что означает x, возведенное в степень 2
+
+Операторы и функции, которые вам необходимо реализовать, являются + - * / ^ cos sin tan exp ln, где ^ означает
+возведение в степень. exp - это экспоненциальная функция (такая же, как e ^ x), а ln - натуральный логарифм (основание e).
+
+Пример входных значений и их производных:
+(* 1 x) => 1
+(^ x 3) => (* 3 (^ x 2))
+(cos x) => (* -1 (sin x))
+
+В дополнение к возврату производной ваше решение также должно выполнить некоторые упрощения результата, но только то,
+что указано ниже.
+
+    Возвращаемое выражение не должно содержать ненужных коэффициентов 0 или 1. Например, он не должен возвращать
+    (* 1 (+ x 1)), а просто термин (+ x 1) аналогично он не должен возвращать (* 0 (+ x 1))
+    вместо этого он должен возвращать только 0
+
+    Результаты с двумя постоянными значениями, такими как, например, (+ 2 2),
+    должны быть оценены и возвращены как одно значение 4
+
+    Любой аргумент, возведенный в нулевую степень, должен возвращать 1, а если он возведен в 1,
+    то должен возвращать то же значение или переменную.
+    Например, (^ x 0) должно возвращать 1, а (^ x 1) должно возвращать x
+
+    Никаких упрощений не ожидается для таких функций, как cos, sin, exp, ln...
+    (но их аргументы могут потребовать упрощения).
+
+Думайте рекурсивно и стройте свой ответ в соответствии с правилами вывода и примерами тестовых случаев.
+Если вам нужно изменить какие-либо тестовые выражения, вы можете использовать Wolfram Alpha, однако помните,
+что в этом ката мы используем формат префикса.
+Желаю удачи!"
