@@ -1,0 +1,37 @@
+Write a method that takes a field for well-known board game "Battleship" as an argument and returns true if it
+has a valid disposition of ships, false otherwise. Argument is guaranteed to be 10*10 two-dimension array.
+Elements in the array are numbers, 0 if the cell is free and 1 if occupied by ship.
+
+Battleship (also Battleships or Sea Battle) is a guessing game for two players. Each player has a 10x10 grid
+containing several "ships" and objective is to destroy enemy's forces by targetting individual cells on his field.
+The ship occupies one or more cells in the grid. Size and number of ships may differ from version to version.
+In this kata we will use Soviet/Russian version of the game.
+
+Before the game begins, players set up the board and place the ships accordingly to the following rules:
+
+    There must be single battleship (size of 4 cells), 2 cruisers (size 3), 3 destroyers (size 2)
+    and 4 submarines (size 1). Any additional ships are not allowed, as well as missing ships.
+    Each ship must be a straight line, except for submarines, which are just single cell.
+    The ship cannot overlap or be in contact with any other ship, neither by edge nor by corner.
+
+This is all you need to solve this kata. If you're interested in more information about the game, visit this link.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Напишите метод, который принимает поле для известной настольной игры "Battleship" в качестве аргумента
+и возвращает true, если он имеет действительное расположение кораблей, в противном случае false.
+Аргумент гарантированно должен быть 10 * 10 двухмерным массивом. Элементами в массиве являются числа, 0,
+если ячейка свободна, и 1, если она занята кораблем.
+
+Линкор (также Линкоры или Морской бой) - игра-догадка для двух игроков. Каждый игрок имеет сетку 10x10,
+содержащую несколько «» кораблей «» и целью является уничтожение сил противника, нацелившись на отдельные ячейки
+на его поле. Корабль занимает одну или несколько ячеек в сетке. Размер и количество кораблей могут отличаться
+от версии к версии. В этой ката мы будем использовать советскую/российскую версию игры. Перед началом игры
+игроки настраивают доску и размещают корабли в соответствии со следующими правилами:
+
+    Должны быть один линкор (размером 4 ячейки), 2 крейсера (размером 3), 3 эсминца (размером 2) и
+    4 подводные лодки (размером 1). Любые дополнительные корабли не допускаются, как и пропавшие.
+    Каждый корабль должен быть прямой линией, за исключением подводных лодок, которые являются только одной ячейкой.
+    Судно не может перекрываться или контактировать с каким-либо другим судном ни по краю, ни по углу.
+
