@@ -1,0 +1,40 @@
+In this kata, your task is to create all permutations of a non-empty input string and remove duplicates, if present.
+
+Create as many "shufflings" as you can!
+
+Examples:
+
+With input 'a':
+Your function should return: ['a']
+
+With input 'ab':
+Your function should return ['ab', 'ba']
+
+With input 'abc':
+Your function should return ['abc','acb','bac','bca','cab','cba']
+
+With input 'aabb':
+Your function should return ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
+
+Note: The order of the permutations doesn't matter.
+
+Good luck!
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+В этом ката необходимо создать все перестановки непустой входной строки и удалить дубликаты, если они имеются.
+Это означает, что необходимо перетасовать все буквы из входных данных во всех возможных заказах.
+
+Примеры:
+
+* С вводом 'a'
+* Ваша функция должна вернуться: ['a']
+
+* С вводом 'ab'
+* Ваша функция должна вернуть ['ab', 'ba']
+
+* С вводом 'aabb'
+* Ваша функция должна вернуть ['aabb', 'abab', 'baab', 'baba', 'baba', 'bbaa']
+
+Порядок перестановок не имеет значения.
